@@ -1,0 +1,57 @@
+{
+  "name": "@civ-clone/base-civilization-carthaginian",
+  "version": "0.1.0",
+  "description": "The Carthaginian civilization class, its leaders, attributes and city names.",
+  "repository": "git@github.com:civ-clone/base-civilization-carthaginian.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "Carthaginian.js",
+    "Carthaginian.d.ts",
+    "Carthaginian.js.map",
+    "Carthaginian.ts",
+    "Leaders.js",
+    "Leaders.d.ts",
+    "Leaders.js.map",
+    "Leaders.ts",
+    "Leaders/HannibalBarca.js",
+    "Leaders/HannibalBarca.d.ts",
+    "Leaders/HannibalBarca.js.map",
+    "Leaders/HannibalBarca.ts",
+    "attributes.js",
+    "attributes.d.ts",
+    "attributes.js.map",
+    "attributes.ts",
+    "cityNames.js",
+    "cityNames.d.ts",
+    "cityNames.js.map",
+    "cityNames.ts"
+  ],
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@civ-clone/core-data-object": "^0.1.19",
+    "@civ-clone/core-rule": "^0.1.9",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@civ-clone/core-civilization": "^0.1.7"
+  }
+}
